@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" controller="ActionBtnTry">
+	<lightning:button label="pass record ID" 
+                              class="slds-m-top--medium"
+                              variant="brand"
+                              onclick="{!c.passrecdid}"/>
+</aura:component>

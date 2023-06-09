@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  title="Meeting Info">
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-small">
+                <ul>
+                    <template for:each={dispData} for:item="contact">
+                        <li key={contact.Id} style="padding: 10px">
+                            <c-contact-tile-view show-contact-info contact-info={contact}></c-contact-tile-view>
+                        </li>
+                    </template>
+                </ul>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

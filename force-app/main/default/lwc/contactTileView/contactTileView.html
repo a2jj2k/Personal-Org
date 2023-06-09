@@ -1,0 +1,11 @@
+<template>
+    <template if:true={showContactInfo}>
+    <div class="slds-p-around_medium slds-theme_shade" onclick={handleTileClick}>
+            <lightning-tile label={contactInfo.Name}>
+                <p class="slds-truncate" title={contactInfo.Id}>{contactInfo.Id}</p>
+                <!-- <p class="slds-truncate" title={contactInfo.Email}></p> -->
+            </lightning-tile>
+    </div>
+    </template>
+    
+</template>

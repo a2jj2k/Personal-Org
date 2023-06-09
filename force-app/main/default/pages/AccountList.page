@@ -1,0 +1,14 @@
+<apex:page standardController="Contact" recordSetVar="Contacts" >
+    <apex:pageblock >
+        
+        <apex:repeat var="a" value="{!Contacts}" rendered="true"  id="contact_list">
+            <li>
+                <apex:outputLink value="/{!a.ID}" >
+                    <apex:outputText value="{!a.FirstName}"/> &nbsp;
+                    <apex:outputText value="{!a.LastName}"/>
+                </apex:outputLink>
+            </li>
+        </apex:repeat>
+        
+    </apex:pageblock>
+</apex:page>

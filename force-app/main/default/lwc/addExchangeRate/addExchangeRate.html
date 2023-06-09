@@ -1,0 +1,27 @@
+<template>
+    <!--<lightning-card title="Exchange Rates" icon-name="custom:custom19">
+    <H1>ALL</H1>
+    <lightning-button label="Load Exchange Rates" slot="actions" onclick={myconnectedCallback}></lightning-button>
+
+    <lightning-datatable data={dispdata} columns={columns} key-field="id"></lightning-datatable><br>HI
+
+    <lightning-button label="Add" slot="actions" onclick={fetchSelectedRows}></lightning-button>
+</lightning-card>-->
+
+
+    <lightning-card  title="Exchange Rates" icon-name="custom:custom17">
+        <lightning-button label="Load Exchange Rates" slot="actions" onclick={myconnectedCallback}></lightning-button>
+        <p class="slds-p-horizontal_small">
+            <lightning-datatable data={dispdata} columns={columns} key-field="id"></lightning-datatable>
+        </p>
+        <p slot="footer">
+            <lightning-button label="Add" slot="actions" onclick={fetchSelectedRows}></lightning-button>
+        </p>
+    </lightning-card>
+
+
+    <!--<template for:each={dispdata} for:item="acc">
+        <p key={acc.Name}>{acc.Name}</p>
+        <p key={acc.rate}>{acc.rate}</p>
+    </template>-->
+</template>

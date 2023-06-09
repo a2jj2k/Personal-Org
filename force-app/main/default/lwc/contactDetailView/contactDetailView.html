@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Selected Contact Detail" icon-name="standard:contact">
+        <lightning-layout>
+            <template if:true={receivedData}>
+                <lightning-layout-item size="8" padding="around-small">
+                    <div class="slds-grid slds-grid_vertical">
+                        <div class="slds-col">Name  : {receivedData.Name}</div>
+                        <div class="slds-col">Email : {receivedData.Email}</div>
+                        <div class="slds-col">Phone : {receivedData.Phone}</div>
+                    </div>
+                </lightning-layout-item>
+
+            </template>
+        </lightning-layout>
+    </lightning-card>
+    
+</template>
