@@ -1,8 +1,9 @@
 <template>
-    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+    <lightning-card title="Data Binding" icon-name="custom:custom14">
       <div class="slds-m-around_medium">
         <p>Hello, {greeting}!</p>
-        <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+        <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input><br/>
+        <lightning-button variant="brand"  label="Wipro" onclick={populateName}></lightning-button>
       </div>
     </lightning-card>
   </template>

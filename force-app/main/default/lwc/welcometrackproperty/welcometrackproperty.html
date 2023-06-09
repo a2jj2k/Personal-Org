@@ -1,4 +1,10 @@
 <template>
-    Hi<div>{greetings}</div>
-    <lightning-input value={greetings} name="greetings" label="Enter Greetings" onchange={handleGreetingChanges}></lightning-input>
+    <lightning-card title="Track Property" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            Object with track property <br/>
+            First Name : {fullName.firstName} <br/>
+            Last Name  : {fullName.lastName} <br/> <br/>
+            <lightning-button variant="brand"  label="Change Last Name" onclick={changeSurname}></lightning-button>
+        </div>
+    </lightning-card>
 </template>
